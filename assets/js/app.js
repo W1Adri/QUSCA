@@ -453,7 +453,7 @@ function viewNutrition(view) {
         el('span.muted.small', {}, `${Math.round(x.kcal)} kcal · ${Math.round(x.p)}P ${Math.round(x.c)}C ${Math.round(x.f)}F`),
         el('button.icon-btn', { onclick: () => { DATA.foods = DATA.foods.filter((y) => y.id !== x.id); Store.save(DATA); route(); } }, '✕'),
       ])),
-    ];
+    ]);
   })) : el('p.muted', {}, 'Nothing logged today.')));
 }
 
