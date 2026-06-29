@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="meta.title">QUSCA · Associació de Comunicacions Espacials Quàntiques</title>
+  <meta name="description" data-i18n-attr="content" data-i18n="meta.desc" content="Fundem una associació a la UPC per dissenyar un CubeSat de distribució quàntica de claus —BB84 amb decoy states— i fer-lo volar amb l'Agència Espacial Europea." />
+  <meta name="theme-color" content="#070A18" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Salta al contingut</a>
+
+  <!-- ====================== NAV ====================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="QUSCA">
+        <span class="brand__mark" aria-hidden="true">
+          <span class="pol pol--v"></span><span class="pol pol--d"></span><span class="pol pol--h"></span><span class="pol pol--a"></span>
+        </span>
+        <span class="brand__text">QUSCA</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#mission" data-i18n="nav.mission">Missió</a>
+        <a href="#tech" data-i18n="nav.tech">Tecnologia</a>
+        <a href="#why" data-i18n="nav.why">Per què ara</a>
+        <a href="#roadmap" data-i18n="nav.roadmap">Full de ruta</a>
+        <a href="#join" data-i18n="nav.join">Uneix-t'hi</a>
+      </nav>
+
+      <div class="nav__actions">
+        <div class="langswitch" role="group" aria-label="Language">
+          <button type="button" data-lang="ca" class="is-active">CA</button>
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="es">ES</button>
+        </div>
+        <a class="btn btn--primary nav__cta" href="#join" data-i18n="nav.cta">Uneix-t'hi</a>
+        <button type="button" class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- ====================== HERO ====================== -->
+    <section class="hero" id="hero">
+      <canvas class="hero__stars" id="stars" aria-hidden="true"></canvas>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">UPC · EETAC — Comunicacions espacials quàntiques</p>
+          <h1 class="hero__title" data-i18n="hero.title" data-i18n-html>Comunicacions <span class="grad">impossibles d'espiar</span>, des de l'espai.</h1>
+          <p class="hero__sub" data-i18n="hero.sub">Fundem una associació de comunicacions per satèl·lit a la UPC per dissenyar un CubeSat que distribueix claus de xifratge sobre fotons individuals —BB84 amb decoy states— i fer-lo volar amb l'Agència Espacial Europea.</p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#mission" data-i18n="hero.cta1">Explora la missió</a>
+            <a class="btn btn--ghost" href="#join" data-i18n="hero.cta2">Uneix-te a l'equip →</a>
+          </div>
+
+          <div class="clock" id="clock" aria-live="off">
+            <span class="clock__label" data-i18n="hero.clockLabel">Termini ESA Design Booster 3</span>
+            <span class="clock__readout" id="countdown">—</span>
+            <span class="clock__target" data-i18n="hero.clockTarget">2 oct 2026 · 13:00 CEST</span>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="link">
+            <div class="link__node link__node--sat">
+              <svg viewBox="0 0 64 64" class="sat" role="img"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="24" y="22" width="16" height="20" rx="2"/><path d="M24 27H8m0 0l5-4m-5 4l5 4M40 27h16m0 0l-5-4m5 4l-5 4"/><path d="M14 23h-8v8h8M50 23h8v8h-8"/><path d="M32 42v6m-4 0h8"/></g></svg>
+              <span class="link__tag">SAT · LEO</span>
+            </div>
+
+            <div class="link__beam">
+              <span class="photon" style="--d:0s"></span>
+              <span class="photon" style="--d:1.1s"></span>
+              <span class="photon" style="--d:2.2s"></span>
+              <span class="photon" style="--d:3.3s"></span>
+            </div>
+
+            <div class="link__node link__node--gs">
+              <svg viewBox="0 0 64 64" class="gs" role="img"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 44a16 16 0 0 1 24-20"/><path d="M44 24l-9 9a6 6 0 1 1-7-7"/><path d="M30 36L16 50m-4 4h12"/></g></svg>
+              <span class="link__tag" data-i18n="hero.gsTag">Estació òptica · Barcelona</span>
+            </div>
+
+            <div class="link__bases">
+              <span class="basis">| — ╱ ╲</span>
+              <span class="basis-label" data-i18n="hero.basesLabel">Bases de polarització BB84</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#plan" aria-label="Scroll">
+        <span data-i18n="hero.scroll">Desplaça</span>
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ====================== PLAN: three moves ====================== -->
+    <section class="section" id="plan">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow"><span class="tick">| —</span> <span data-i18n="plan.eyebrow">El pla</span></p>
+          <h2 class="sec-title" data-i18n="plan.title">Tres moviments, un sol objectiu</h2>
+        </header>
+
+        <div class="moves">
+          <article class="move">
+            <span class="move__mark pol-mark pol-mark--v" aria-hidden="true"></span>
+            <h3 data-i18n="plan.c1t">Fundar l'associació</h3>
+            <p data-i18n="plan.c1b">Una associació d'estudiants a la UPC centrada en comunicacions per satèl·lit: ens dóna identitat legal, accés a laboratoris, finançament i un nom sota el qual reclutar.</p>
+          </article>
+          <article class="move">
+            <span class="move__mark pol-mark pol-mark--d" aria-hidden="true"></span>
+            <h3 data-i18n="plan.c2t">Dissenyar un CubeSat quàntic</h3>
+            <p data-i18n="plan.c2b">Un CubeSat 3U que fa distribució quàntica de claus —BB84 amb decoy states—. Viable, ja demostrat a Europa i encara no fet per ningú a l'Estat espanyol.</p>
+          </article>
+          <article class="move">
+            <span class="move__mark pol-mark pol-mark--a" aria-hidden="true"></span>
+            <h3 data-i18n="plan.c3t">Portar-lo a l'ESA</h3>
+            <p data-i18n="plan.c3b">Presentar-lo al Fly Your Satellite! Design Booster de l'ESA: 1,5 anys de mentoria experta, instal·lacions de prova i la rampa cap a un llançament patrocinat.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== MISSION ====================== -->
+    <section class="section section--alt" id="mission">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow"><span class="tick">╱ ╲</span> <span data-i18n="mission.eyebrow">La missió</span></p>
+          <h2 class="sec-title" data-i18n="mission.title">Una clau secreta, escrita amb fotons</h2>
+        </header>
+
+        <div class="mission__grid">
+          <div class="mission__lead">
+            <p data-i18n="mission.p1">La distribució quàntica de claus (QKD) envia una clau de xifratge codificada en fotons individuals. Les lleis de la física garanteixen que qualsevol espia és detectat: la seguretat no depèn d'un problema matemàtic difícil, així que cap ordinador quàntic futur la podrà trencar.</p>
+            <p class="mission__protocol"><span class="k" data-i18n="mission.protoK">Protocol</span> <span data-i18n="mission.protoV">BB84 (Bennett &amp; Brassard) + mètode decoy-state — el cavall de batalla de la QKD pràctica al món real.</span></p>
+          </div>
+
+          <div class="mission__diagram" id="bb84">
+            <div class="states">
+              <div class="state"><span class="state__line" style="--rot:90deg"></span><span class="state__lbl">0°</span></div>
+              <div class="state"><span class="state__line" style="--rot:0deg"></span><span class="state__lbl">90°</span></div>
+              <div class="state"><span class="state__line" style="--rot:45deg"></span><span class="state__lbl">45°</span></div>
+              <div class="state"><span class="state__line" style="--rot:135deg"></span><span class="state__lbl">135°</span></div>
+            </div>
+            <p class="states__cap" data-i18n="mission.statesCap">Quatre estats de polarització · dues bases. Cada fotó porta un bit; mesurar amb la base equivocada el destrueix.</p>
+          </div>
+        </div>
+
+        <div class="features">
+          <article class="feature">
+            <h3 data-i18n="mission.f1t">La QKD més fàcil de construir</h3>
+            <p data-i18n="mission.f1b">Fa servir un làser de polsos coherents febles (WCP), no una fràgil font de fotons entrellaçats.</p>
+          </article>
+          <article class="feature">
+            <h3 data-i18n="mission.f2t">Els decoy states tanquen l'escletxa</h3>
+            <p data-i18n="mission.f2b">Neutralitzen els atacs de divisió del nombre de fotons (PNS) i restauren la seguretat completa amb un làser senzill.</p>
+          </article>
+          <article class="feature">
+            <h3 data-i18n="mission.f3t">Cap en un CubeSat 3U</h3>
+            <p data-i18n="mission.f3b">Càrrega quàntica + terminal òptic en ~1U; la resta és plataforma — el format que buscaríem per al DB3.</p>
+          </article>
+          <article class="feature">
+            <h3 data-i18n="mission.f4t">Ja demostrat en òrbita</h3>
+            <p data-i18n="mission.f4b">No és ciència-ficció: ja ha volat. Adaptem una recepta coneguda en comptes d'inventar-ne una.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== FEASIBILITY / STATS ====================== -->
+    <section class="section" id="feasibility">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow"><span class="tick">|</span> <span data-i18n="feas.eyebrow">Viabilitat</span></p>
+          <h2 class="sec-title" data-i18n="feas.title">Ja ha volat</h2>
+          <p class="sec-intro" data-i18n="feas.intro">QUBE, un CubeSat 3U alemany, es va llançar en un Falcon 9 l'agost de 2024 per provar components de QKD en òrbita: un generador quàntic de nombres aleatoris, una font BB84 i un enllaç òptic descendent. El seu successor, QUBE-II, ja s'està desenvolupant.</p>
+        </header>
+
+        <div class="stats">
+          <div class="stat">
+            <span class="stat__num" data-count="3" data-suffix="U">3U</span>
+            <span class="stat__lbl" data-i18n="feas.s1">Format CubeSat — 10×10×30 cm, la mateixa classe que construiríem</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="3.53" data-decimals="2" data-suffix=" kg">3.53 kg</span>
+            <span class="stat__lbl" data-i18n="feas.s2">Massa total en òrbita</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="2024">2024</span>
+            <span class="stat__lbl" data-i18n="feas.s3">Llançat i operatiu — font BB84 + QRNG + enllaç òptic</span>
+          </div>
+          <div class="stat stat--accent">
+            <span class="stat__num" data-count="0">0</span>
+            <span class="stat__lbl" data-i18n="feas.s4">Satèl·lits quàntics espanyols. Seríem els primers.</span>
+          </div>
+        </div>
+
+        <p class="note" data-i18n="feas.note">La pregunta difícil —«pot un equip d'estudiants fer QKD en un 3U?»— ja té resposta: sí. El nostre risc és d'enginyeria, no de física. I ser els primers a l'Estat espanyol ja és titular per si sol.</p>
+      </div>
+    </section>
+
+    <!-- ====================== CONTRIBUTION ====================== -->
+    <section class="section section--alt" id="tech">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow"><span class="tick">╱</span> <span data-i18n="contrib.eyebrow">La nostra aportació</span></p>
+          <h2 class="sec-title" data-i18n="contrib.title">No copiem QUBE — l'anem més enllà</h2>
+          <p class="sec-intro" data-i18n="contrib.intro">L'ESA puntua els «objectius de missió» i la «novetat». Una simple repetició no guanya; aquí és on viuen la recerca real i els treballs de fi de grau.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card"><h3 data-i18n="contrib.c1t">Millor enllaç òptic</h3><p data-i18n="contrib.c1b">Un telescopi / obertura més gran per millorar el balanç de l'enllaç descendent i la taxa de clau.</p></article>
+          <article class="card"><h3 data-i18n="contrib.c2t">Sistema PAT</h3><p data-i18n="contrib.c2b">Apuntament, adquisició i seguiment més precisos — el subsistema decisiu de qualsevol CubeSat de QKD.</p></article>
+          <article class="card"><h3 data-i18n="contrib.c3t">Òptica i components millorats</h3><p data-i18n="contrib.c3b">Substituir, provar i caracteritzar components òptics alternatius i la font de decoy states.</p></article>
+          <article class="card"><h3 data-i18n="contrib.c4t">Miniaturització</h3><p data-i18n="contrib.c4b">Reduir la càrrega quàntica — cap a unitats més petites, barates i replicables.</p></article>
+          <article class="card"><h3 data-i18n="contrib.c5t">Optimització de decoy states</h3><p data-i18n="contrib.c5b">Ajustar intensitats i paràmetres del protocol al canal LEO per maximitzar la clau segura.</p></article>
+          <article class="card"><h3 data-i18n="contrib.c6t">Espai per a idees noves</h3><p data-i18n="contrib.c6b">Cada fase obre subproblemes nous: imatge, deixalla espacial, comunicacions òptiques clàssiques, RF.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== WHY NOW ====================== -->
+    <section class="section" id="why">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow"><span class="tick">╲</span> <span data-i18n="why.eyebrow">Per què ara</span></p>
+          <h2 class="sec-title" data-i18n="why.title">Europa està invertint exactament en això</h2>
+          <p class="sec-intro" data-i18n="why.intro">La comunicació quàntica segura és una prioritat estratègica de la UE. El vent bufa a favor: finançadors, professors i l'ESA volen estar associats a aquest camp ara mateix.</p>
+        </header>
+
+        <div class="cards cards--why">
+          <article class="card"><span class="card__kicker">EuroQCI</span><p data-i18n="why.c1b">La UE i l'ESA construeixen una xarxa quàntica segura als 27 estats membres — un segment terrestre i un de satèl·lit.</p></article>
+          <article class="card"><span class="card__kicker">Eagle-1 &amp; IRIS²</span><p data-i18n="why.c2b">El primer satèl·lit de QKD de l'ESA, Eagle-1, ha de llançar-se a finals de 2026; sota IRIS² es licita un microsatèl·lit pilot de QKD.</p></article>
+          <article class="card"><span class="card__kicker" data-i18n="why.c3k">Estació òptica a Barcelona</span><p data-i18n="why.c3b">IberianQCI munta estacions òptiques a Madrid, Barcelona i el sud de Portugal — un possible objectiu d'enllaç a tocar de casa.</p></article>
+          <article class="card"><span class="card__kicker" data-i18n="why.c4k">Catalunya, hub quàntic</span><p data-i18n="why.c4b">La «Vall Mediterrània Quàntica» + l'Acadèmia Quàntica de Catalunya (ICFO, UPC, CTTC, UAB, UB…) — els nostres aliats són aquí mateix.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== PROGRAMME + ROADMAP ====================== -->
+    <section class="section section--alt" id="roadmap">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow"><span class="tick">| — ╱ ╲</span> <span data-i18n="prog.eyebrow">El programa</span></p>
+          <h2 class="sec-title" data-i18n="prog.title">ESA Fly Your Satellite! Design Booster 3</h2>
+          <p class="sec-intro" data-i18n="prog.intro">Un programa de l'ESA Education per a equips universitaris amb un disseny preliminar de CubeSat. Calendari fix d'1,5 anys: experts de l'ESA revisen el teu disseny, n'implementes el feedback i el consolides. Pensat per a equips amb poca experiència — exactament el nostre perfil. «No cal cap compromís de finançament per entrar al programa.»</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="tl">
+            <span class="tl__date">2026</span>
+            <div class="tl__body"><h3 data-i18n="prog.t1t">Ara — construir l'equip</h3><p data-i18n="prog.t1b">Convocatòria oberta. Formem l'equip i redactem la proposta.</p></div>
+          </li>
+          <li class="tl tl--key">
+            <span class="tl__date">2 oct 2026</span>
+            <div class="tl__body"><h3 data-i18n="prog.t2t">Termini de proposta</h3><p data-i18n="prog.t2b">Proposta de satèl·lit + carta d'aval. 13:00 CEST — cada setmana compta.</p></div>
+          </li>
+          <li class="tl">
+            <span class="tl__date">16–20 nov 2026</span>
+            <div class="tl__body"><h3 data-i18n="prog.t3t">Setmana de formació</h3><p data-i18n="prog.t3b">Presencial a l'ESTEC per als equips preseleccionats.</p></div>
+          </li>
+          <li class="tl">
+            <span class="tl__date">1–3 des 2026</span>
+            <div class="tl__body"><h3 data-i18n="prog.t4t">Taller de selecció</h3><p data-i18n="prog.t4b">Defensem el disseny; els equips escollits entren al programa.</p></div>
+          </li>
+          <li class="tl">
+            <span class="tl__date">mar–abr 2027</span>
+            <div class="tl__body"><h3 data-i18n="prog.t5t">Baseline Design Review</h3><p data-i18n="prog.t5b">Implementem el feedback i consolidem el disseny.</p></div>
+          </li>
+          <li class="tl">
+            <span class="tl__date">2028</span>
+            <div class="tl__body"><h3 data-i18n="prog.t6t">Revisió final</h3><p data-i18n="prog.t6b">Disseny madur i consolidat (maig–juny 2028) — i la rampa cap a un llançament patrocinat.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ====================== SCORECARD ====================== -->
+    <section class="section" id="score">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow"><span class="tick">╱ ╲</span> <span data-i18n="score.eyebrow">Per què ens poden seleccionar</span></p>
+          <h2 class="sec-title" data-i18n="score.title">Les nostres forces, sobre la rúbrica de l'ESA</h2>
+        </header>
+
+        <div class="bars">
+          <div class="bar" style="--pct:50%">
+            <div class="bar__head"><span class="bar__name" data-i18n="score.b1n">Qualitat &amp; Missió</span><span class="bar__pct">50%</span></div>
+            <div class="bar__track"><span class="bar__fill"></span></div>
+            <p class="bar__desc" data-i18n="score.b1d">Una missió quàntica de viabilitat provada, amb novetat clara i l'angle de ser els primers a l'Estat espanyol.</p>
+          </div>
+          <div class="bar" style="--pct:30%">
+            <div class="bar__head"><span class="bar__name" data-i18n="score.b2n">Retorn educatiu</span><span class="bar__pct">30%</span></div>
+            <div class="bar__track"><span class="bar__fill"></span></div>
+            <p class="bar__desc" data-i18n="score.b2d">TFGs, articles i un equip multidisciplinari aprenent enginyeria espacial real.</p>
+          </div>
+          <div class="bar" style="--pct:20%">
+            <div class="bar__head"><span class="bar__name" data-i18n="score.b3n">Equip &amp; Organització</span><span class="bar__pct">20%</span></div>
+            <div class="bar__track"><span class="bar__fill"></span></div>
+            <p class="bar__desc" data-i18n="score.b3d">UPC + l'herència del NanoSat Lab + els experts quàntics del CTTC al darrere.</p>
+          </div>
+        </div>
+
+        <p class="note note--accent" data-i18n="score.tie">Avantatge de desempat: els equips nous tenen prioritat sobre els que ja participen en un programa de l'ESA — això som nosaltres.</p>
+      </div>
+    </section>
+
+    <!-- ====================== ALLIES ====================== -->
+    <section class="section section--alt" id="allies">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow"><span class="tick">|</span> <span data-i18n="allies.eyebrow">Aliats i equip</span></p>
+          <h2 class="sec-title" data-i18n="allies.title">La credibilitat guanya seleccions</h2>
+          <p class="sec-intro" data-i18n="allies.intro">El tracte que oferim als experts: coautoria dels articles que publiquem a canvi d'accés a laboratoris, mentoria i, quan sigui possible, una part del pressupost.</p>
+        </header>
+
+        <div class="allies">
+          <article class="ally"><span class="ally__name">UPC</span><p data-i18n="allies.a1">Llar institucional, laboratoris, finançament i el professor avalador. Propietària del satèl·lit.</p></article>
+          <article class="ally"><span class="ally__name">NanoSat Lab</span><p data-i18n="allies.a2">Herència real ESA / Ariane 6 amb el 3Cat-4. Mentors ideals — coordinar, no xocar.</p></article>
+          <article class="ally"><span class="ally__name">CTTC</span><p data-i18n="allies.a3">Experts en QKD a Castelldefels (projectes Telefónica, LuxQuanta) + Acadèmia Quàntica.</p></article>
+          <article class="ally"><span class="ally__name">ICFO</span><p data-i18n="allies.a4">Fotònica i òptica quàntica de primer nivell mundial; coordina l'Acadèmia Quàntica de Catalunya.</p></article>
+          <article class="ally"><span class="ally__name">BSC</span><p data-i18n="allies.a5">Modelització, simulació i múscul de computació quàntica per a la feina d'anàlisi.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== JOIN / CTA ====================== -->
+    <section class="cta" id="join">
+      <canvas class="cta__stars" id="stars2" aria-hidden="true"></canvas>
+      <div class="wrap cta__inner">
+        <p class="eyebrow" data-i18n="join.eyebrow">Uneix-t'hi</p>
+        <h2 class="cta__title" data-i18n="join.title">Construeix un satèl·lit que vola en un coet europeu — mentre encara ets estudiant.</h2>
+        <p class="cta__sub" data-i18n="join.sub">Busquem 6+ membres de totes les disciplines: ADCS, òptica, potència, programari, estructures, i també gestió i dret. Hi ha un TFG real i volable esperant-te.</p>
+        <div class="cta__actions">
+          <a class="btn btn--primary btn--lg" href="mailto:qusca@upc.edu?subject=Vull%20unir-me%20a%20QUSCA" data-i18n="join.cta1">Escriu-nos</a>
+          <a class="btn btn--ghost btn--lg" href="#mission" data-i18n="join.cta2">Torna a la missió</a>
+        </div>
+        <p class="cta__contact"><span data-i18n="join.contactLabel">Contacte</span> · <a href="mailto:qusca@upc.edu">qusca@upc.edu</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="foot">
+    <div class="wrap foot__inner">
+      <div class="foot__brand">
+        <span class="brand__text">QUSCA</span>
+        <p data-i18n="foot.tagline">Associació de Comunicacions Espacials Quàntiques · UPC EETAC</p>
+      </div>
+      <nav class="foot__links" aria-label="Footer">
+        <a href="#mission" data-i18n="nav.mission">Missió</a>
+        <a href="#tech" data-i18n="nav.tech">Tecnologia</a>
+        <a href="#roadmap" data-i18n="nav.roadmap">Full de ruta</a>
+        <a href="#join" data-i18n="nav.join">Uneix-t'hi</a>
+      </nav>
+      <p class="foot__note"><span data-i18n="foot.deadline">Termini ESA DB3</span>: 2 oct 2026 · 13:00 CEST</p>
+    </div>
+    <div class="wrap foot__legal">
+      <span>© <span id="year">2026</span> QUSCA</span>
+      <span data-i18n="foot.made">Fet a Castelldefels · UPC EETAC</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
