@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title data-i18n="meta.title">QUSCA · Associació de Comunicacions Espacials Quàntiques</title>
+  <title data-i18n="meta.title">ACSAR · Associació de Comunicacions Satel·litals Avançades i Resilients</title>
   <meta name="description" data-i18n-attr="content" data-i18n="meta.desc" content="Fundem una associació a la UPC per dissenyar un CubeSat de distribució quàntica de claus —BB84 amb decoy states— i fer-lo volar amb l'Agència Espacial Europea." />
   <meta name="theme-color" content="#070A18" />
 
@@ -19,11 +19,11 @@
   <!-- ====================== NAV ====================== -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="brand" href="#top" aria-label="QUSCA">
+      <a class="brand" href="#top" aria-label="ACSAR">
         <span class="brand__mark" aria-hidden="true">
           <span class="pol pol--v"></span><span class="pol pol--d"></span><span class="pol pol--h"></span><span class="pol pol--a"></span>
         </span>
-        <span class="brand__text">QUSCA</span>
+        <span class="brand__text">ACSAR</span>
       </a>
 
       <nav class="nav__links" aria-label="Primary">
@@ -124,7 +124,7 @@
           <article class="move">
             <span class="move__mark pol-mark pol-mark--d" aria-hidden="true"></span>
             <h3 data-i18n="plan.c2t">Dissenyar un CubeSat quàntic</h3>
-            <p data-i18n="plan.c2b">Un CubeSat 3U que fa distribució quàntica de claus —BB84 amb decoy states—. Viable, ja demostrat a Europa i encara no fet per ningú a l'Estat espanyol.</p>
+            <p data-i18n="plan.c2b">Un CubeSat 6U que fa distribució quàntica de claus —BB84 amb decoy states—. Adoptem la classe 6U, el mínim viable ja provat internacionalment, i aspirem a ser el primer CubeSat QKD acadèmic de l'Estat espanyol.</p>
           </article>
           <article class="move">
             <span class="move__mark pol-mark pol-mark--a" aria-hidden="true"></span>
@@ -170,12 +170,12 @@
             <p data-i18n="mission.f2b">Neutralitzen els atacs de divisió del nombre de fotons (PNS) i restauren la seguretat completa amb un làser senzill.</p>
           </article>
           <article class="feature">
-            <h3 data-i18n="mission.f3t">Cap en un CubeSat 3U</h3>
-            <p data-i18n="mission.f3b">Càrrega quàntica + terminal òptic en ~1U; la resta és plataforma — el format que buscaríem per al DB3.</p>
+            <h3 data-i18n="mission.f3t">Cap en un CubeSat 6U</h3>
+            <p data-i18n="mission.f3b">Càrrega quàntica + terminal òptic en ~1–2U; la resta és plataforma — la classe 6U que busquem per al Design Booster.</p>
           </article>
           <article class="feature">
-            <h3 data-i18n="mission.f4t">Ja demostrat en òrbita</h3>
-            <p data-i18n="mission.f4b">No és ciència-ficció: ja ha volat. Adaptem una recepta coneguda en comptes d'inventar-ne una.</p>
+            <h3 data-i18n="mission.f4t">Components ja volats en òrbita</h3>
+            <p data-i18n="mission.f4b">Els components clau de la QKD ja han volat en CubeSats (QUBE-I, 2024). Adaptem una recepta en desenvolupament, no en partim de zero.</p>
           </article>
         </div>
       </div>
@@ -186,30 +186,30 @@
       <div class="wrap">
         <header class="sec-head">
           <p class="eyebrow"><span class="tick">|</span> <span data-i18n="feas.eyebrow">Viabilitat</span></p>
-          <h2 class="sec-title" data-i18n="feas.title">Ja ha volat</h2>
-          <p class="sec-intro" data-i18n="feas.intro">QUBE, un CubeSat 3U alemany, es va llançar en un Falcon 9 l'agost de 2024 per provar components de QKD en òrbita: un generador quàntic de nombres aleatoris, una font BB84 i un enllaç òptic descendent. El seu successor, QUBE-II, ja s'està desenvolupant.</p>
+          <h2 class="sec-title" data-i18n="feas.title">Risc d'enginyeria, no de física</h2>
+          <p class="sec-intro" data-i18n="feas.intro">QUBE-I, un CubeSat 3U alemany, es va llançar en un Falcon 9 l'agost de 2024 i va demostrar en òrbita els components clau de la QKD —un generador quàntic de nombres aleatoris i fonts BB84—, tot i que la seva petita obertura no li permet tancar clau segura. El seu successor, QUBE-II (8U), va volar el maig de 2026. El britànic ROKS aposta, com nosaltres, per la classe 6U.</p>
         </header>
 
         <div class="stats">
           <div class="stat">
-            <span class="stat__num" data-count="3" data-suffix="U">3U</span>
-            <span class="stat__lbl" data-i18n="feas.s1">Format CubeSat — 10×10×30 cm, la mateixa classe que construiríem</span>
+            <span class="stat__num" data-count="6" data-suffix="U">6U</span>
+            <span class="stat__lbl" data-i18n="feas.s1">La classe que adoptem — el mínim viable ja provat internacionalment (ROKS)</span>
           </div>
           <div class="stat">
-            <span class="stat__num" data-count="3.53" data-decimals="2" data-suffix=" kg">3.53 kg</span>
-            <span class="stat__lbl" data-i18n="feas.s2">Massa total en òrbita</span>
+            <span class="stat__num" data-count="500" data-suffix=" km">~500 km</span>
+            <span class="stat__lbl" data-i18n="feas.s2">Òrbita LEO objectiu — enllaç descendent (downlink) satèl·lit→Terra</span>
           </div>
           <div class="stat">
             <span class="stat__num" data-count="2024">2024</span>
-            <span class="stat__lbl" data-i18n="feas.s3">Llançat i operatiu — font BB84 + QRNG + enllaç òptic</span>
+            <span class="stat__lbl" data-i18n="feas.s3">QUBE-I en òrbita — primer pathfinder de components QKD en un CubeSat</span>
           </div>
           <div class="stat stat--accent">
             <span class="stat__num" data-count="0">0</span>
-            <span class="stat__lbl" data-i18n="feas.s4">Satèl·lits quàntics espanyols. Seríem els primers.</span>
+            <span class="stat__lbl" data-i18n="feas.s4">CubeSats que han tancat clau QKD segura en òrbita — a data de juliol de 2026. El repte segueix obert.</span>
           </div>
         </div>
 
-        <p class="note" data-i18n="feas.note">La pregunta difícil —«pot un equip d'estudiants fer QKD en un 3U?»— ja té resposta: sí. El nostre risc és d'enginyeria, no de física. I ser els primers a l'Estat espanyol ja és titular per si sol.</p>
+        <p class="note" data-i18n="feas.note">Pot un equip universitari dissenyar un CubeSat de QKD? Els precedents diuen que la classe 6U és viable, i la UPC ja ha dissenyat i volat plataformes 6U amb el seu NanoSat Lab (³Cat-2). El nostre risc és d'enginyeria, no de física — i cap CubeSat ha tancat encara clau segura en òrbita.</p>
       </div>
     </section>
 
@@ -244,7 +244,7 @@
 
         <div class="cards cards--why">
           <article class="card"><span class="card__kicker">EuroQCI</span><p data-i18n="why.c1b">La UE i l'ESA construeixen una xarxa quàntica segura als 27 estats membres — un segment terrestre i un de satèl·lit.</p></article>
-          <article class="card"><span class="card__kicker">Eagle-1 &amp; IRIS²</span><p data-i18n="why.c2b">El primer satèl·lit de QKD de l'ESA, Eagle-1, ha de llançar-se a finals de 2026; sota IRIS² es licita un microsatèl·lit pilot de QKD.</p></article>
+          <article class="card"><span class="card__kicker">Eagle-1 &amp; IRIS²</span><p data-i18n="why.c2b">Eagle-1 (SES/ESA) —que no és un CubeSat— serà el primer sistema QKD europeu end-to-end operatiu, amb llançament previst per a finals de 2027 / principis de 2028; sota IRIS² i EuroQCI es preparen més missions QKD.</p></article>
           <article class="card"><span class="card__kicker" data-i18n="why.c3k">Estació òptica a Barcelona</span><p data-i18n="why.c3b">IberianQCI munta estacions òptiques a Madrid, Barcelona i el sud de Portugal — un possible objectiu d'enllaç a tocar de casa.</p></article>
           <article class="card"><span class="card__kicker" data-i18n="why.c4k">Catalunya, hub quàntic</span><p data-i18n="why.c4b">La «Vall Mediterrània Quàntica» + l'Acadèmia Quàntica de Catalunya (ICFO, UPC, CTTC, UAB, UB…) — els nostres aliats són aquí mateix.</p></article>
         </div>
@@ -301,7 +301,7 @@
           <div class="bar" style="--pct:50%">
             <div class="bar__head"><span class="bar__name" data-i18n="score.b1n">Qualitat &amp; Missió</span><span class="bar__pct">50%</span></div>
             <div class="bar__track"><span class="bar__fill"></span></div>
-            <p class="bar__desc" data-i18n="score.b1d">Una missió quàntica de viabilitat provada, amb novetat clara i l'angle de ser els primers a l'Estat espanyol.</p>
+            <p class="bar__desc" data-i18n="score.b1d">Una missió quàntica de viabilitat provada, amb novetat clara i l'angle de ser el primer CubeSat QKD acadèmic de l'Estat espanyol.</p>
           </div>
           <div class="bar" style="--pct:30%">
             <div class="bar__head"><span class="bar__name" data-i18n="score.b2n">Retorn educatiu</span><span class="bar__pct">30%</span></div>
@@ -330,7 +330,7 @@
 
         <div class="allies">
           <article class="ally"><span class="ally__name">UPC</span><p data-i18n="allies.a1">Llar institucional, laboratoris, finançament i el professor avalador. Propietària del satèl·lit.</p></article>
-          <article class="ally"><span class="ally__name">NanoSat Lab</span><p data-i18n="allies.a2">Herència real ESA / Ariane 6 amb el 3Cat-4. Mentors ideals — coordinar, no xocar.</p></article>
+          <article class="ally"><span class="ally__name">NanoSat Lab</span><p data-i18n="allies.a2">Herència CubeSat real de la UPC, inclosa la plataforma 6U ³Cat-2. Mentors ideals — coordinar, no xocar.</p></article>
           <article class="ally"><span class="ally__name">CTTC</span><p data-i18n="allies.a3">Experts en QKD a Castelldefels (projectes Telefónica, LuxQuanta) + Acadèmia Quàntica.</p></article>
           <article class="ally"><span class="ally__name">ICFO</span><p data-i18n="allies.a4">Fotònica i òptica quàntica de primer nivell mundial; coordina l'Acadèmia Quàntica de Catalunya.</p></article>
           <article class="ally"><span class="ally__name">BSC</span><p data-i18n="allies.a5">Modelització, simulació i múscul de computació quàntica per a la feina d'anàlisi.</p></article>
@@ -346,10 +346,10 @@
         <h2 class="cta__title" data-i18n="join.title">Construeix un satèl·lit que vola en un coet europeu — mentre encara ets estudiant.</h2>
         <p class="cta__sub" data-i18n="join.sub">Busquem 6+ membres de totes les disciplines: ADCS, òptica, potència, programari, estructures, i també gestió i dret. Hi ha un TFG real i volable esperant-te.</p>
         <div class="cta__actions">
-          <a class="btn btn--primary btn--lg" href="mailto:qusca@upc.edu?subject=Vull%20unir-me%20a%20QUSCA" data-i18n="join.cta1">Escriu-nos</a>
+          <a class="btn btn--primary btn--lg" href="mailto:acsar@upc.edu?subject=Vull%20unir-me%20a%20ACSAR" data-i18n="join.cta1">Escriu-nos</a>
           <a class="btn btn--ghost btn--lg" href="#mission" data-i18n="join.cta2">Torna a la missió</a>
         </div>
-        <p class="cta__contact"><span data-i18n="join.contactLabel">Contacte</span> · <a href="mailto:qusca@upc.edu">qusca@upc.edu</a></p>
+        <p class="cta__contact"><span data-i18n="join.contactLabel">Contacte</span> · <a href="mailto:acsar@upc.edu">acsar@upc.edu</a></p>
       </div>
     </section>
   </main>
@@ -358,8 +358,8 @@
   <footer class="foot">
     <div class="wrap foot__inner">
       <div class="foot__brand">
-        <span class="brand__text">QUSCA</span>
-        <p data-i18n="foot.tagline">Associació de Comunicacions Espacials Quàntiques · UPC EETAC</p>
+        <span class="brand__text">ACSAR</span>
+        <p data-i18n="foot.tagline">Associació de Comunicacions Satel·litals Avançades i Resilients · UPC EETAC</p>
       </div>
       <nav class="foot__links" aria-label="Footer">
         <a href="#mission" data-i18n="nav.mission">Missió</a>
@@ -370,7 +370,7 @@
       <p class="foot__note"><span data-i18n="foot.deadline">Termini ESA DB3</span>: 2 oct 2026 · 13:00 CEST</p>
     </div>
     <div class="wrap foot__legal">
-      <span>© <span id="year">2026</span> QUSCA</span>
+      <span>© <span id="year">2026</span> ACSAR</span>
       <span data-i18n="foot.made">Fet a Castelldefels · UPC EETAC</span>
     </div>
   </footer>

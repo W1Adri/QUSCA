@@ -1,5 +1,5 @@
 /* =====================================================================
-   QUSCA — interaction layer
+   ACSAR — interaction layer
    Starfield · countdown to the ESA deadline · animated counters ·
    scorecard bars · scroll reveal · sticky nav · mobile menu
    ===================================================================== */

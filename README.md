@@ -1,6 +1,6 @@
-# QUSCA — Web (català · english · castellano)
+# ACSAR — Web (català · english · castellano)
 
-Web de presentación de **QUSCA — Associació de Comunicacions Espacials Quàntiques**
+Web de presentación de **ACSAR — Associació de Comunicacions Satel·litals Avançades i Resilients**
 (UPC · EETAC): un CubeSat de distribución cuántica de claves (QKD) con **BB84 + decoy
 states**, candidato a **ESA Fly Your Satellite! Design Booster 3**.
 
@@ -116,7 +116,7 @@ Para cambiar una frase, edítala en los **tres** idiomas (misma clave). Ejemplo:
 
 Guarda y **recarga la página** (F5) para ver el cambio.
 
-> El email de contacto es `qusca@upc.edu` (en el botón «Escríbenos» del HTML y en el
+> El email de contacto es `acsar@upc.edu` (en el botón «Escríbenos» del HTML y en el
 > pie). Cámbialo por el correo real buscándolo en `index.html`.
 
 ---

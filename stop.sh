@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # =====================================================================
-#  QUSCA — cerrar la web local
+#  ACSAR — cerrar la web local
 #  Detiene cualquier servidor que esté sirviendo ESTA carpeta.
 #  Útil si lo lanzaste en otra ventana o en segundo plano.
 # =====================================================================
@@ -12,7 +12,7 @@ DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PIDS="$(pgrep -f "http.server.*${DIR}" 2>/dev/null || true)"
 
 if [ -z "$PIDS" ]; then
-  echo "No hay ningún servidor de QUSCA en marcha."
+  echo "No hay ningún servidor de ACSAR en marcha."
   exit 0
 fi
 

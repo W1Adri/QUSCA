@@ -1,5 +1,5 @@
 /* =====================================================================
-   QUSCA — internationalisation (CA · EN · ES)
+   ACSAR — internationalisation (CA · EN · ES)
    Single source of truth for all copy. HTML is seeded in Catalan for
    no-JS / first paint; this dictionary drives every language switch.
    ===================================================================== */
@@ -9,7 +9,7 @@
   var I18N = {
     /* =================================================== CATALÀ */
     ca: {
-      "meta.title": "QUSCA · Associació de Comunicacions Espacials Quàntiques",
+      "meta.title": "ACSAR · Associació de Comunicacions Satel·litals Avançades i Resilients",
       "meta.desc": "Fundem una associació a la UPC per dissenyar un CubeSat de distribució quàntica de claus —BB84 amb decoy states— i fer-lo volar amb l'Agència Espacial Europea.",
 
       "nav.skip": "Salta al contingut",
@@ -36,7 +36,7 @@
       "plan.c1t": "Fundar l'associació",
       "plan.c1b": "Una associació d'estudiants a la UPC centrada en comunicacions per satèl·lit: ens dóna identitat legal, accés a laboratoris, finançament i un nom sota el qual reclutar.",
       "plan.c2t": "Dissenyar un CubeSat quàntic",
-      "plan.c2b": "Un CubeSat 3U que fa distribució quàntica de claus —BB84 amb decoy states—. Viable, ja demostrat a Europa i encara no fet per ningú a l'Estat espanyol.",
+      "plan.c2b": "Un CubeSat 6U que fa distribució quàntica de claus —BB84 amb decoy states—. Adoptem la classe 6U, el mínim viable ja provat internacionalment, i aspirem a ser el primer CubeSat QKD acadèmic de l'Estat espanyol.",
       "plan.c3t": "Portar-lo a l'ESA",
       "plan.c3b": "Presentar-lo al Fly Your Satellite! Design Booster de l'ESA: 1,5 anys de mentoria experta, instal·lacions de prova i la rampa cap a un llançament patrocinat.",
 
@@ -50,19 +50,19 @@
       "mission.f1b": "Fa servir un làser de polsos coherents febles (WCP), no una fràgil font de fotons entrellaçats.",
       "mission.f2t": "Els decoy states tanquen l'escletxa",
       "mission.f2b": "Neutralitzen els atacs de divisió del nombre de fotons (PNS) i restauren la seguretat completa amb un làser senzill.",
-      "mission.f3t": "Cap en un CubeSat 3U",
-      "mission.f3b": "Càrrega quàntica + terminal òptic en ~1U; la resta és plataforma — el format que buscaríem per al DB3.",
-      "mission.f4t": "Ja demostrat en òrbita",
-      "mission.f4b": "No és ciència-ficció: ja ha volat. Adaptem una recepta coneguda en comptes d'inventar-ne una.",
+      "mission.f3t": "Cap en un CubeSat 6U",
+      "mission.f3b": "Càrrega quàntica + terminal òptic en ~1–2U; la resta és plataforma — la classe 6U que busquem per al Design Booster.",
+      "mission.f4t": "Components ja volats en òrbita",
+      "mission.f4b": "Els components clau de la QKD ja han volat en CubeSats (QUBE-I, 2024). Adaptem una recepta en desenvolupament, no en partim de zero.",
 
       "feas.eyebrow": "Viabilitat",
-      "feas.title": "Ja ha volat",
-      "feas.intro": "QUBE, un CubeSat 3U alemany, es va llançar en un Falcon 9 l'agost de 2024 per provar components de QKD en òrbita: un generador quàntic de nombres aleatoris, una font BB84 i un enllaç òptic descendent. El seu successor, QUBE-II, ja s'està desenvolupant.",
-      "feas.s1": "Format CubeSat — 10×10×30 cm, la mateixa classe que construiríem",
-      "feas.s2": "Massa total en òrbita",
-      "feas.s3": "Llançat i operatiu — font BB84 + QRNG + enllaç òptic",
-      "feas.s4": "Satèl·lits quàntics espanyols. Seríem els primers.",
-      "feas.note": "La pregunta difícil —«pot un equip d'estudiants fer QKD en un 3U?»— ja té resposta: sí. El nostre risc és d'enginyeria, no de física. I ser els primers a l'Estat espanyol ja és titular per si sol.",
+      "feas.title": "Risc d'enginyeria, no de física",
+      "feas.intro": "QUBE-I, un CubeSat 3U alemany, es va llançar en un Falcon 9 l'agost de 2024 i va demostrar en òrbita els components clau de la QKD —un generador quàntic de nombres aleatoris i fonts BB84—, tot i que la seva petita obertura no li permet tancar clau segura. El seu successor, QUBE-II (8U), va volar el maig de 2026. El britànic ROKS aposta, com nosaltres, per la classe 6U.",
+      "feas.s1": "La classe que adoptem — el mínim viable ja provat internacionalment (ROKS)",
+      "feas.s2": "Òrbita LEO objectiu — enllaç descendent (downlink) satèl·lit→Terra",
+      "feas.s3": "QUBE-I en òrbita — primer pathfinder de components QKD en un CubeSat",
+      "feas.s4": "CubeSats que han tancat clau QKD segura en òrbita — a data de juliol de 2026. El repte segueix obert.",
+      "feas.note": "Pot un equip universitari dissenyar un CubeSat de QKD? Els precedents diuen que la classe 6U és viable, i la UPC ja ha dissenyat i volat plataformes 6U amb el seu NanoSat Lab (³Cat-2). El nostre risc és d'enginyeria, no de física — i cap CubeSat ha tancat encara clau segura en òrbita.",
 
       "contrib.eyebrow": "La nostra aportació",
       "contrib.title": "No copiem QUBE — l'anem més enllà",
@@ -84,7 +84,7 @@
       "why.title": "Europa està invertint exactament en això",
       "why.intro": "La comunicació quàntica segura és una prioritat estratègica de la UE. El vent bufa a favor: finançadors, professors i l'ESA volen estar associats a aquest camp ara mateix.",
       "why.c1b": "La UE i l'ESA construeixen una xarxa quàntica segura als 27 estats membres — un segment terrestre i un de satèl·lit.",
-      "why.c2b": "El primer satèl·lit de QKD de l'ESA, Eagle-1, ha de llançar-se a finals de 2026; sota IRIS² es licita un microsatèl·lit pilot de QKD.",
+      "why.c2b": "Eagle-1 (SES/ESA) —que no és un CubeSat— serà el primer sistema QKD europeu end-to-end operatiu, amb llançament previst per a finals de 2027 / principis de 2028; sota IRIS² i EuroQCI es preparen més missions QKD.",
       "why.c3k": "Estació òptica a Barcelona",
       "why.c3b": "IberianQCI munta estacions òptiques a Madrid, Barcelona i el sud de Portugal — un possible objectiu d'enllaç a tocar de casa.",
       "why.c4k": "Catalunya, hub quàntic",
@@ -109,7 +109,7 @@
       "score.eyebrow": "Per què ens poden seleccionar",
       "score.title": "Les nostres forces, sobre la rúbrica de l'ESA",
       "score.b1n": "Qualitat & Missió",
-      "score.b1d": "Una missió quàntica de viabilitat provada, amb novetat clara i l'angle de ser els primers a l'Estat espanyol.",
+      "score.b1d": "Una missió quàntica de viabilitat provada, amb novetat clara i l'angle de ser el primer CubeSat QKD acadèmic de l'Estat espanyol.",
       "score.b2n": "Retorn educatiu",
       "score.b2d": "TFGs, articles i un equip multidisciplinari aprenent enginyeria espacial real.",
       "score.b3n": "Equip & Organització",
@@ -120,7 +120,7 @@
       "allies.title": "La credibilitat guanya seleccions",
       "allies.intro": "El tracte que oferim als experts: coautoria dels articles que publiquem a canvi d'accés a laboratoris, mentoria i, quan sigui possible, una part del pressupost.",
       "allies.a1": "Llar institucional, laboratoris, finançament i el professor avalador. Propietària del satèl·lit.",
-      "allies.a2": "Herència real ESA / Ariane 6 amb el 3Cat-4. Mentors ideals — coordinar, no xocar.",
+      "allies.a2": "Herència CubeSat real de la UPC, inclosa la plataforma 6U ³Cat-2. Mentors ideals — coordinar, no xocar.",
       "allies.a3": "Experts en QKD a Castelldefels (projectes Telefónica, LuxQuanta) + Acadèmia Quàntica.",
       "allies.a4": "Fotònica i òptica quàntica de primer nivell mundial; coordina l'Acadèmia Quàntica de Catalunya.",
       "allies.a5": "Modelització, simulació i múscul de computació quàntica per a la feina d'anàlisi.",
@@ -132,14 +132,14 @@
       "join.cta2": "Torna a la missió",
       "join.contactLabel": "Contacte",
 
-      "foot.tagline": "Associació de Comunicacions Espacials Quàntiques · UPC EETAC",
+      "foot.tagline": "Associació de Comunicacions Satel·litals Avançades i Resilients · UPC EETAC",
       "foot.deadline": "Termini ESA DB3",
       "foot.made": "Fet a Castelldefels · UPC EETAC"
     },
 
     /* =================================================== ENGLISH */
     en: {
-      "meta.title": "QUSCA · Quantum Space Communications Association",
+      "meta.title": "ACSAR · Advanced and Resilient Satellite Communications Association",
       "meta.desc": "We're founding an association at UPC to design a quantum-key-distribution CubeSat —BB84 with decoy states— and fly it with the European Space Agency.",
 
       "nav.skip": "Skip to content",
@@ -166,7 +166,7 @@
       "plan.c1t": "Found the association",
       "plan.c1b": "A UPC student association focused on satellite communications: it gives us legal identity, access to labs, funding and a banner to recruit under.",
       "plan.c2t": "Design a quantum CubeSat",
-      "plan.c2b": "A 3U CubeSat doing quantum key distribution —BB84 with decoy states—. Feasible, already proven in Europe, and not yet done by anyone in Spain.",
+      "plan.c2b": "A 6U CubeSat doing quantum key distribution —BB84 with decoy states—. We adopt the 6U class, the minimum viable size already proven internationally, aiming to be Spain's first academic QKD CubeSat.",
       "plan.c3t": "Take it to ESA",
       "plan.c3b": "Submit it to ESA's Fly Your Satellite! Design Booster: 1.5 years of expert mentoring, test facilities, and the on-ramp to a sponsored launch.",
 
@@ -180,19 +180,19 @@
       "mission.f1b": "It uses a weak-coherent-pulse (WCP) laser, not a fragile entangled-photon source.",
       "mission.f2t": "Decoy states close the loophole",
       "mission.f2b": "They defeat photon-number-splitting (PNS) attacks and restore full security with a simple laser.",
-      "mission.f3t": "Fits a 3U CubeSat",
-      "mission.f3b": "Quantum payload + optical terminal in ~1U; the rest is platform — the form factor we'd target for DB3.",
-      "mission.f4t": "Already proven in orbit",
-      "mission.f4b": "Not science fiction — it has flown. We adapt a known recipe instead of inventing one.",
+      "mission.f3t": "Fits a 6U CubeSat",
+      "mission.f3b": "Quantum payload + optical terminal in ~1–2U; the rest is platform — the 6U class we target for the Design Booster.",
+      "mission.f4t": "Components already flown",
+      "mission.f4b": "The key QKD components have already flown on CubeSats (QUBE-I, 2024). We adapt a recipe in development rather than starting from scratch.",
 
       "feas.eyebrow": "Feasibility",
-      "feas.title": "It has already flown",
-      "feas.intro": "QUBE, a German 3U CubeSat, launched on a Falcon 9 in August 2024 to test QKD components in orbit: a quantum random number generator, a BB84 source and an optical downlink. Its successor, QUBE-II, is already in development.",
-      "feas.s1": "CubeSat form factor — 10×10×30 cm, the same class we'd build",
-      "feas.s2": "Total mass in orbit",
-      "feas.s3": "Launched and operating — BB84 source + QRNG + optical link",
-      "feas.s4": "Spanish quantum satellites. We'd be the first.",
-      "feas.note": "The hard question —“can a student-class team do QKD on a 3U?”— is already answered: yes. Our risk is engineering, not physics. And being first in Spain is a headline in itself.",
+      "feas.title": "Engineering risk, not physics",
+      "feas.intro": "QUBE-I, a German 3U CubeSat, launched on a Falcon 9 in August 2024 and demonstrated the key QKD components in orbit —a quantum random number generator and BB84 sources—, though its small aperture can't close a secure key. Its successor, QUBE-II (8U), flew in May 2026. The UK's ROKS backs the 6U class, just like us.",
+      "feas.s1": "The class we adopt — the minimum viable size already proven internationally (ROKS)",
+      "feas.s2": "Target LEO orbit — satellite→ground downlink",
+      "feas.s3": "QUBE-I in orbit — the first QKD-component pathfinder on a CubeSat",
+      "feas.s4": "CubeSats that have closed a secure QKD key in orbit — as of July 2026. The milestone is still open.",
+      "feas.note": "Can a university team design a QKD CubeSat? Precedent says the 6U class is viable, and UPC has already designed and flown 6U platforms with its NanoSat Lab (³Cat-2). Our risk is engineering, not physics — and no CubeSat has yet closed a secure key in orbit.",
 
       "contrib.eyebrow": "Our contribution",
       "contrib.title": "We don't copy QUBE — we push it further",
@@ -214,7 +214,7 @@
       "why.title": "Europe is investing in exactly this",
       "why.intro": "Quantum-secure communication is a top EU strategic priority. The wind is at our backs: funders, professors and ESA all want to be associated with this field right now.",
       "why.c1b": "The EU and ESA are building a quantum-secure network across all 27 member states — a terrestrial segment and a satellite segment.",
-      "why.c2b": "ESA's first QKD satellite, Eagle-1, is due to launch in late 2026; a QKD microsatellite pilot is being procured under IRIS².",
+      "why.c2b": "Eagle-1 (SES/ESA) —not a CubeSat— will be Europe's first end-to-end operational QKD system, now slated for late 2027 / early 2028; more QKD missions are being prepared under IRIS² and EuroQCI.",
       "why.c3k": "Optical ground station in Barcelona",
       "why.c3b": "IberianQCI is setting up optical stations in Madrid, Barcelona and southern Portugal — a potential downlink target on our doorstep.",
       "why.c4k": "Catalonia, a quantum hub",
@@ -239,7 +239,7 @@
       "score.eyebrow": "Why we can get selected",
       "score.title": "Our strengths, mapped to ESA's scorecard",
       "score.b1n": "Quality & Mission",
-      "score.b1d": "A proven-feasible quantum mission with clear novelty and the first-in-Spain angle.",
+      "score.b1d": "A proven-feasible quantum mission with clear novelty and the first-academic-QKD-CubeSat-in-Spain angle.",
       "score.b2n": "Educational return",
       "score.b2d": "Theses, papers and a multidisciplinary team learning real space engineering.",
       "score.b3n": "Team & Organisation",
@@ -250,7 +250,7 @@
       "allies.title": "Credibility wins selections",
       "allies.intro": "The deal we offer experts: co-authorship on the papers we publish in exchange for lab access, mentoring and, where possible, a slice of the budget.",
       "allies.a1": "Institutional home, labs, funding and the endorsing professor. Owner of the satellite.",
-      "allies.a2": "Real ESA / Ariane 6 heritage with 3Cat-4. Ideal mentors — coordinate, don't collide.",
+      "allies.a2": "Real UPC CubeSat heritage, including the 6U ³Cat-2 platform. Ideal mentors — coordinate, don't collide.",
       "allies.a3": "QKD experts in Castelldefels (Telefónica, LuxQuanta projects) + the Quantum Academy.",
       "allies.a4": "World-class photonics and quantum optics; coordinates the Catalonia Quantum Academy.",
       "allies.a5": "Modelling, simulation and quantum-compute muscle for the analysis work.",
@@ -262,14 +262,14 @@
       "join.cta2": "Back to the mission",
       "join.contactLabel": "Contact",
 
-      "foot.tagline": "Quantum Space Communications Association · UPC EETAC",
+      "foot.tagline": "Advanced and Resilient Satellite Communications Association · UPC EETAC",
       "foot.deadline": "ESA DB3 deadline",
       "foot.made": "Made in Castelldefels · UPC EETAC"
     },
 
     /* =================================================== CASTELLANO */
     es: {
-      "meta.title": "QUSCA · Asociación de Comunicaciones Espaciales Cuánticas",
+      "meta.title": "ACSAR · Asociación de Comunicaciones Satelitales Avanzadas y Resilientes",
       "meta.desc": "Fundamos una asociación en la UPC para diseñar un CubeSat de distribución cuántica de claves —BB84 con decoy states— y hacerlo volar con la Agencia Espacial Europea.",
 
       "nav.skip": "Saltar al contenido",
@@ -296,7 +296,7 @@
       "plan.c1t": "Fundar la asociación",
       "plan.c1b": "Una asociación de estudiantes en la UPC centrada en comunicaciones por satélite: nos da identidad legal, acceso a laboratorios, financiación y un nombre bajo el que reclutar.",
       "plan.c2t": "Diseñar un CubeSat cuántico",
-      "plan.c2b": "Un CubeSat 3U que hace distribución cuántica de claves —BB84 con decoy states—. Viable, ya demostrado en Europa y aún no hecho por nadie en España.",
+      "plan.c2b": "Un CubeSat 6U que hace distribución cuántica de claves —BB84 con decoy states—. Adoptamos la clase 6U, el mínimo viable ya probado internacionalmente, y aspiramos a ser el primer CubeSat QKD académico de España.",
       "plan.c3t": "Llevarlo a la ESA",
       "plan.c3b": "Presentarlo al Fly Your Satellite! Design Booster de la ESA: 1,5 años de mentoría experta, instalaciones de prueba y la rampa hacia un lanzamiento patrocinado.",
 
@@ -310,19 +310,19 @@
       "mission.f1b": "Usa un láser de pulsos coherentes débiles (WCP), no una frágil fuente de fotones entrelazados.",
       "mission.f2t": "Los decoy states cierran la brecha",
       "mission.f2b": "Neutralizan los ataques de división del número de fotones (PNS) y restauran la seguridad completa con un láser sencillo.",
-      "mission.f3t": "Cabe en un CubeSat 3U",
-      "mission.f3b": "Carga cuántica + terminal óptico en ~1U; el resto es plataforma — el formato que buscaríamos para el DB3.",
-      "mission.f4t": "Ya demostrado en órbita",
-      "mission.f4b": "No es ciencia ficción: ya ha volado. Adaptamos una receta conocida en lugar de inventar una.",
+      "mission.f3t": "Cabe en un CubeSat 6U",
+      "mission.f3b": "Carga cuántica + terminal óptico en ~1–2U; el resto es plataforma — la clase 6U que buscamos para el Design Booster.",
+      "mission.f4t": "Componentes ya volados en órbita",
+      "mission.f4b": "Los componentes clave de la QKD ya han volado en CubeSats (QUBE-I, 2024). Adaptamos una receta en desarrollo, no partimos de cero.",
 
       "feas.eyebrow": "Viabilidad",
-      "feas.title": "Ya ha volado",
-      "feas.intro": "QUBE, un CubeSat 3U alemán, se lanzó en un Falcon 9 en agosto de 2024 para probar componentes de QKD en órbita: un generador cuántico de números aleatorios, una fuente BB84 y un enlace óptico descendente. Su sucesor, QUBE-II, ya está en desarrollo.",
-      "feas.s1": "Formato CubeSat — 10×10×30 cm, la misma clase que construiríamos",
-      "feas.s2": "Masa total en órbita",
-      "feas.s3": "Lanzado y operativo — fuente BB84 + QRNG + enlace óptico",
-      "feas.s4": "Satélites cuánticos españoles. Seríamos los primeros.",
-      "feas.note": "La pregunta difícil —«¿puede un equipo de estudiantes hacer QKD en un 3U?»— ya tiene respuesta: sí. Nuestro riesgo es de ingeniería, no de física. Y ser los primeros en España ya es titular por sí solo.",
+      "feas.title": "Riesgo de ingeniería, no de física",
+      "feas.intro": "QUBE-I, un CubeSat 3U alemán, se lanzó en un Falcon 9 en agosto de 2024 y demostró en órbita los componentes clave de la QKD —un generador cuántico de números aleatorios y fuentes BB84—, aunque su pequeña apertura no le permite cerrar clave segura. Su sucesor, QUBE-II (8U), voló en mayo de 2026. El británico ROKS apuesta, como nosotros, por la clase 6U.",
+      "feas.s1": "La clase que adoptamos — el mínimo viable ya probado internacionalmente (ROKS)",
+      "feas.s2": "Órbita LEO objetivo — enlace descendente (downlink) satélite→Tierra",
+      "feas.s3": "QUBE-I en órbita — primer pathfinder de componentes QKD en un CubeSat",
+      "feas.s4": "CubeSats que han cerrado clave QKD segura en órbita — a fecha de julio de 2026. El reto sigue abierto.",
+      "feas.note": "¿Puede un equipo universitario diseñar un CubeSat de QKD? Los precedentes dicen que la clase 6U es viable, y la UPC ya ha diseñado y volado plataformas 6U con su NanoSat Lab (³Cat-2). Nuestro riesgo es de ingeniería, no de física — y ningún CubeSat ha cerrado todavía clave segura en órbita.",
 
       "contrib.eyebrow": "Nuestra aportación",
       "contrib.title": "No copiamos QUBE — lo llevamos más lejos",
@@ -344,7 +344,7 @@
       "why.title": "Europa está invirtiendo exactamente en esto",
       "why.intro": "La comunicación cuántica segura es una prioridad estratégica de la UE. El viento sopla a favor: financiadores, profesores y la ESA quieren estar asociados a este campo ahora mismo.",
       "why.c1b": "La UE y la ESA construyen una red cuántica segura en los 27 estados miembros — un segmento terrestre y uno de satélite.",
-      "why.c2b": "El primer satélite de QKD de la ESA, Eagle-1, debe lanzarse a finales de 2026; bajo IRIS² se licita un microsatélite piloto de QKD.",
+      "why.c2b": "Eagle-1 (SES/ESA) —que no es un CubeSat— será el primer sistema QKD europeo end-to-end operativo, con lanzamiento previsto para finales de 2027 / principios de 2028; bajo IRIS² y EuroQCI se preparan más misiones QKD.",
       "why.c3k": "Estación óptica en Barcelona",
       "why.c3b": "IberianQCI monta estaciones ópticas en Madrid, Barcelona y el sur de Portugal — un posible objetivo de enlace a un paso de casa.",
       "why.c4k": "Cataluña, hub cuántico",
@@ -369,7 +369,7 @@
       "score.eyebrow": "Por qué nos pueden seleccionar",
       "score.title": "Nuestras fortalezas, sobre la rúbrica de la ESA",
       "score.b1n": "Calidad & Misión",
-      "score.b1d": "Una misión cuántica de viabilidad probada, con novedad clara y el ángulo de ser los primeros en España.",
+      "score.b1d": "Una misión cuántica de viabilidad probada, con novedad clara y el ángulo de ser el primer CubeSat QKD académico de España.",
       "score.b2n": "Retorno educativo",
       "score.b2d": "TFGs, artículos y un equipo multidisciplinar aprendiendo ingeniería espacial real.",
       "score.b3n": "Equipo & Organización",
@@ -380,7 +380,7 @@
       "allies.title": "La credibilidad gana selecciones",
       "allies.intro": "El trato que ofrecemos a los expertos: coautoría de los artículos que publiquemos a cambio de acceso a laboratorios, mentoría y, cuando sea posible, una parte del presupuesto.",
       "allies.a1": "Hogar institucional, laboratorios, financiación y el profesor avalador. Propietaria del satélite.",
-      "allies.a2": "Herencia real ESA / Ariane 6 con el 3Cat-4. Mentores ideales — coordinar, no chocar.",
+      "allies.a2": "Herencia CubeSat real de la UPC, incluida la plataforma 6U ³Cat-2. Mentores ideales — coordinar, no chocar.",
       "allies.a3": "Expertos en QKD en Castelldefels (proyectos Telefónica, LuxQuanta) + Academia Cuántica.",
       "allies.a4": "Fotónica y óptica cuántica de primer nivel mundial; coordina la Academia Cuántica de Cataluña.",
       "allies.a5": "Modelización, simulación y músculo de computación cuántica para el trabajo de análisis.",
@@ -392,14 +392,14 @@
       "join.cta2": "Vuelve a la misión",
       "join.contactLabel": "Contacto",
 
-      "foot.tagline": "Asociación de Comunicaciones Espaciales Cuánticas · UPC EETAC",
+      "foot.tagline": "Asociación de Comunicaciones Satelitales Avanzadas y Resilientes · UPC EETAC",
       "foot.deadline": "Plazo ESA DB3",
       "foot.made": "Hecho en Castelldefels · UPC EETAC"
     }
   };
 
   var SUPPORTED = ["ca", "en", "es"];
-  var STORE_KEY = "qusca-lang";
+  var STORE_KEY = "acsar-lang";
 
   function pickInitial() {
     var saved;
@@ -439,11 +439,11 @@
 
     try { localStorage.setItem(STORE_KEY, lang); } catch (e) {}
 
-    document.dispatchEvent(new CustomEvent("qusca:lang", { detail: { lang: lang } }));
+    document.dispatchEvent(new CustomEvent("acsar:lang", { detail: { lang: lang } }));
   }
 
   // expose
-  window.QUSCA_I18N = { apply: apply, pickInitial: pickInitial, supported: SUPPORTED };
+  window.ACSAR_I18N = { apply: apply, pickInitial: pickInitial, supported: SUPPORTED };
 
   // wire the switch + apply initial as early as possible
   function init() {

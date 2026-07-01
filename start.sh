@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # =====================================================================
-#  QUSCA — lanzar la web en local
+#  ACSAR — lanzar la web en local
 #  Arranca un servidor web SOLO en tu ordenador (127.0.0.1) y abre el
 #  navegador automáticamente. Nada se publica ni sale a internet.
 #  Para cerrarlo: pulsa  Ctrl + C  en esta ventana (o ejecuta ./stop.sh).
@@ -33,7 +33,7 @@ URL="http://localhost:$PORT"
 
 echo ""
 echo "  ┌──────────────────────────────────────────────┐"
-echo "  │   QUSCA · web en local                         │"
+echo "  │   ACSAR · web en local                         │"
 echo "  └──────────────────────────────────────────────┘"
 echo ""
 echo "   Abre en tu navegador:   $URL"
